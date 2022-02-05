@@ -1,0 +1,3 @@
+this is file first files
+all file add in staging area => git add -A
+remove file from staging area => git rm --cached <file-name>
