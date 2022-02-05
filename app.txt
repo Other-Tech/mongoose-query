@@ -1,1 +1,10 @@
-text file
+git checkout -f
+
+
+
+tell us commit history  => git log 
+show last commit => git -p -1  
+git add and commit together => git commit -a -m"commit message" 
+all file add in staging area => git add -A  
+remove file from staging area => git rm --cached <file-name>   
+delete file => git rm -f <file-name>
