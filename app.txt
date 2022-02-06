@@ -1,17 +1,141 @@
-git checkout -f
+◾◾◾◾◾◾ Welcome Musharraf In Git Notes ◾◾◾◾◾◾
+🅰🅱🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆉
+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
+
+↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭
+↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭
+
+◾ VCS/SCS/RCS (Version/Source/Revision Control Systems) ==The shell is a command line interpreter> A
+   version control system or VCS, also know as
+   revision control or source control system, is a software utility that tracks and manages changes to a
+   filesystem. A version control system allows users to keep track of the changes in software development
+   projects, and enable them to collaborate on those projects. Using it, the developers can work together 
+   on code and separate their tasks through branches. As development environments have accelerated, version
+   control systems help software teams work faster and smarter. 
+   Example--(1)Git, (2)Apache SVN/Subversion, (3)HG/Mercurial, (4)Azure DevOps, (5)ArX, (6)DCVS, (7)Monotone  
+
+    ★ Git => Git is a free and open source distributed version control system that lets you manage and keep
+        track of your source code history, designed to handle everything from small to very large projects 
+        with speed and efficiency. 
+
+    ★ Git/Repository/Code/Web/Cloud Hosting Service => Repository hosting services are third-party web
+        applications that wrap and enhance a version control system. You cannot fully utilize a repository 
+        hosting service without using an underlying version control system. A good repository hosting service
+        will provide tools for measuring, monitoring, discussing and managing software development efficiency
+        and correctness.
+        Example -- (1)GitHub, (2)GitLab, (4)Bitbucket, (5)Amazon AWS CodeCommit, (6)Microsoft Azure DevOps,
+                   (7)Codebase, (8)Beanstalk, (9)Assembla, (10)repo
+
+        ★ GitHub => GitHub is a Web-based Git repository hosting service, which offers all of the distributed 
+            revision control and source code management (SCM) functionality of Git.
+         
+        ★ Bitbucket ==> code hosting service
+
+◾ Git VS GitHub ==> Git is a VERSION CONTROL SYSTEM that lets you manage and keep track of your source code history. 
+    GitHub is a CLOUD-BASED HOSTING SERVICE that lets you manage Git repositories. If you have open-source projects 
+    that use Git, then GitHub is designed to help you better manage them. Git has a remote repository which is stored
+    in a server and a local repository which is stored in the computer of each developer.GitHub is a hosting service 
+    for Git repositories. So they are not the same thing: Git is the tool, GitHub is the service for projects that 
+    You do not need GitHub to use git, but you cannot use GitHub without using git.
+
+
+◾ Git Source Code Repository ==> 
+    Git is software for tracking changes in any set of files, usually used for coordinating work 
+    among programmers collaboratively developing source code during software development  
 
 
 
-tell us commit history  => git log 
-show last commit => git -p -1  
-git add and commit together => git commit -a -m"commit message" 
-all file add in staging area => git add -A  
-remove file from staging area => git rm --cached <file-name>   
-delete file => git rm -f <file-name>
+◾ check config(check karne ke liye ki aapka git ka setup ho gya he kya) => git config --global user.name
+
+◾ Repository => repository ek folder hota he jisme hamara project hota he.
+
+◾ Remotes => Jo repository server par hoti he use ham remote repository kahate he.
+
+◾ Master => Jo main branch hoti he jisme all code save hote he.
+
+◾ Local => Jo repository local par hoti he, jisme ham current work karte he use ham local repository kahate he.
+
+◉ GIT COMMAND ---
+    ★ show git detail(name, email etc) => git config -l
+    ★ Git username add command => git config --global user.name "YOUR NAME"
+      ap is command se terminal me jakar kahi bhi aapka name add kar sakte he 
+    ★ Git email add command => git config --global user.email "YOUR EMAIL"
+    ★ Show your name in the terminal command => git config --global user.name 
+    ★ Show your account name in terminal command => whoami
+    ★ Show your home dir to live dir command => pwd (presents work directory)
+    ★ Show your file information like(when modify, permissions) terminal command => ls -l
+    ★ Show all file, folder your file terminal command => ls -f
+
+    ★ all file add in staging area => git add -A  
+    ★ git add and commit together => git commit -a -m"commit message" 
+    ★ remove file from staging area => git rm --cached <file-name>   
+    ★ remove file from staging area => git restore --staged <file-name>   
+    ★ delete file from hard disk => git rm -f <file-name>
+    ★ after commit file delete and you want return file from local repository => git checkout <file-name>
+    ★ after commit files delete and you want return all file from local repository => git checkout -f
+    ★ tell us commit history  => git log 
+    ★ show last commit => git -p -1  
+    ★ shows the all file(modify,add,untracked) => git status -s 
+
+    ★ show all branch => git branch  
+    ★ create new branch => git branch <branch-name>
+    ★ switch branch one to other branch => git checkout <branch-name>
+    ★ create new branch and direct switch new create branch => git checkout -b <branch-name>
+    ★ if you merge branch with other branch => If you want to merge any branch, then switch to the 
+        branch in which you want to merge.
+        example -- jese master branch me merge karana chahte ho mushrraf ki branch ke code, cmd below 
+                   git checkout master
+                   git merge mushrraf
+
+    ★ show remote repositori => git remote
+    ★ local project add on github with clone =>  git pull https://github.com/MushrrafKhan/zombie-project.git
+    ★ after commit push code => git push -u origin <branch-name>
+    ★ 
+
+if you run pwd in terminal you get parent and you print ls you get children(file)
+
+◉ Git Base =>
+      Bash is a popular default shell on Linux and macOS.
+      Git Bash is an application that provides Git command line experience on the Operating System. 
+      It is a command-line shell for enabling git with the command line in the system. A shell is 
+      a terminal application used to interface with an operating system through written commands. 
+      Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows 
+      operating system. In Git Bash the user interacts with the repository and git elements 
+      through the commands.
 
 
 
-New branch create updatecode
+◉ Git CMD Vs Git Base Vs Gui => url => vhttps://www.varonis.com/blog/powershell-vs-cmd
+    ★ CMD -- Git CMD is just like regular Windows command prompt with the git command. It lets you 
+              use all of Git features through command line. if you familiar with window disk commands, 
+              you can use git command(cmd).Windows Command Prompt – also known as CMD – is the original shell 
+              for the Microsoft DOS operating system.agar aap window me command chalate he to usko cmd kahte he
+    ★ Base -- Its a Bash based Terminal, [Bash is a Unix based Terminal] which simply means
+              that user can directly use Unix commands in that Bash terminal. if you familiar 
+              with git Linux commands, use git base.
+              agar aap linux me command chalate he to usko git base kathte he
+    ★ Gui -- Git GUI is a Graphical User Interface letting you use Git without touching command line.
+              If you want to do use a ui representational git use git Gui.
+              command ko graphic ke jariye dekhna aur use karana gui hota he.
 
 
-the code add by updatecode branch
+
+================================================================↭↭↭↭↭↭↭↭↭↭↭↭
+================================================================= 
+mac = LalaLala786
+mail = numberlala
+================================================================= 
+༒༒ мυѕняяαƒ кнαη , ᴍᴜꜱʜʀʀᴀꜰ ᴋʜᴀɴ , Ｍｕｓｈｒｒａｆ Ｋｈａｎ , 𝕸𝖚𝖘𝖍𝖗𝖗𝖆𝖋 𝕶𝖍𝖆𝖓 , 🅼🆄🆂🅷🆁🆁🅰🅵 🅺🅷🅰🅽 , 𝓜𝓾𝓼𝓱𝓻𝓻𝓪𝓯 𝓚𝓱𝓪𝓷 , 𝔐𝔲𝔰𝔥𝔯𝔯𝔞𝔣 𝔎𝔥𝔞𝔫 , 𝕄𝕦𝕤𝕙𝕣𝕣𝕒𝕗 𝕂𝕙𝕒𝕟 , ᴹᵘˢʰʳʳᵃᶠ ᴷʰᵃⁿ , 𝑀𝓊𝓈𝒽𝓇𝓇𝒶𝒻 𝒦𝒽𝒶𝓃 ༒༒
+================================================================◾◾
+
+
+
+
+
+
+
+
+
+
+
+🇲‌🇺‌🇸‌🇭‌🇷‌🇷‌🇦‌🇫‌ 🇰‌🇭‌🇦‌🇳‌
