@@ -12,3 +12,6 @@ delete file => git rm -f <file-name>
 
 
 New branch create updatecode
+
+
+the code add by updatecode branch
