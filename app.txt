@@ -12,3 +12,6 @@ delete file => git rm -f <file-name>
 
 
 New branch create updatecode
+fdfdf
+
+this is space repository file
