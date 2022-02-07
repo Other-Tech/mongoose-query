@@ -12,3 +12,4 @@ delete file => git rm -f <file-name>
 
 
 New branch create updatecode
+fdfd
