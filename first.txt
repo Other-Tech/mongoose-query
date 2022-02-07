@@ -1,2 +1,192 @@
-this is file first files
-all file add in staging area => git add -A
+this is files first files ,, test for conflict
+◾◾◾◾◾◾ Welcome Musharraf In Linux Notes ◾◾◾◾◾◾
+🅰🅱🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆉
+
+
+↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭
+↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭↭
+
+
+◉ Command prompt(CMD) => cmd is a Microsoft Windows command that opens the Windows command line window. 
+  CMD is an acronym for Command. Command prompt, or CMD, is the command-line interpreter of 
+  Windows operating systems
+
+◉ Windows Powershell command => Windows PowerShell is the new Microsoft shell that combines the
+    old CMD functionality with a new scripting. PowerShell is a more advanced version of cmd. 
+    It is not only an interface but also a scripting language that is used to carry out administrative
+    tasks more easily.That command prompt (CMD) still lived on for decades. Only recently did
+    CMD get an upgrade, or replacement, with PowerShell, the shell application Microsoft introduced 
+    with Windows.
+
+◉ Find and delete unused node_module folders(kisi bhi path me 
+  ya cmd chalane par ud directory me node module show ho jayenge) ==> npx npkill
+
+◉ apt update ==> 
+    apt ek ubuntu ka package manager he jisse aap software install kar sakte he, agar <apt update> terminal me
+    chalate he to jo package update nhi he wo update ho jate he. apt-get is a command line interface
+    for retrieval of packages and information about them from authenticated sources and for installation,
+    upgrade and removal of packages together with their dependencies.
+    ubuntu 16 ke niche apt-get chalate he, unme sirt apt kam nahi karega jese -- sudo apt-get update.
+    ubuntu 16 ke upar apt-get bhi chal jata he aur sirf apt bhi chal jata he jese -- sudo apt update.
+    Show All Command Used With Apt (in terminal) => apt-get help
+    Example ---> Most used commands:
+            update - Retrieve new lists of packages
+            upgrade - Perform an upgrade
+            install - Install new packages (pkg is libc6 not libc6.deb)
+            reinstall - Reinstall packages (pkg is libc6 not libc6.deb)
+            remove - Remove packages
+            purge - Remove packages and config files
+            autoremove - Remove automatically all unused packages
+            dist-upgrade - Distribution upgrade, see apt-get(8)
+            dselect-upgrade - Follow dselect selections
+            build-dep - Configure build-dependencies for source packages
+            satisfy - Satisfy dependency strings
+            clean - Erase downloaded archive files
+            autoclean - Erase old downloaded archive files
+            check - Verify that there are no broken dependencies
+            source - Download source archives
+            download - Download the binary package into the current directory
+            changelog - Download and display the changelog for the given package
+
+◉ Repository => Ek parkar ka storage he jaha par sabhi tool ko ek particular location par 
+    install karke rakh leta he agar apko koi tool install karna he to us repository 
+    se wo tool download ho jata he.
+
+◉ sudo apt-get update => ye kisi bhi software ko ne to update karata he aur ne hi install karta he,
+    repository me jo new version get hua he unki header ke version
+    ko download karke unki local list banakar rakh leta he apne local computer me.
+    uske bad sudo apt-get upgrade chalate he to agar new version isko repository me mil jata he 
+    to usko download kar leta he
+
+◉ sudo apt-get upgrade => agar repository me new version mil jata he to usko install kar leta he,
+    ye software ko repository me se downloaded karta he aur install kar leta he
+    
+◉ Terminal me root directory me koi bhi file ko dekhna ho to command => cat FILE_NAME 
+
+◉ Hidden files show in ubntu terminal command => ls -a
+◉ Hidden files show with permissions in ubntu terminal command => ls -lart
+◉ All file(child) files show in ubntu terminal command => ls -R
+◉ Show Create Table Query Command => show create table table_name
+◉ Linux - Fsck to Repair Filesystem Command ==> fsck -f /dev/sda2 
+◉ (Present Working Directory) in linux enter ==> pwd 
+◉ Direct Home Directory ==> cd /
+◉ Go root user/directory terminal command anywhere => sudo su
+◉ Open For Tweaks Command => gnome-tweaks
+◉ New user add in command => useradd <username>
+◉ User password change in the terminal => passwd <username>  
+◉ Task Manager like window show all status like cpu ram use real time command => top
+◉ New file create command => touch <file_name>
+
+
+◉ New file create in terminal => nano 
+    and after the nano command you write content and press ctrl+o and after write file name
+    and press Enter button and after ctrl+x
+
+
+◉ Terminal me kisi file ke path se back aane ke liye »» 
+   Ctrl + z => agar user kisi path par he aur ctrl+z click kar de to wo direct local path par send kar dega
+   Ctrl + c => agar user kisi path par he aur ctrl+c click kar de to wo jaha par the us path
+               par send kar dega ne ki local path par send karega
+
+
+
+◉ linux file remove command ==> rm first_dir_and_file_name second_dir_and_file_name
+  example -- mv /home/mushraf/Document/index.js /home/mushraf/Desktop
+
+
+◉ Linux file copy command ==> cp first_dir_and_file_name second_dir_and_file_name
+  example -- cp /home/mushraf/Document/index.js /home/mushraf/Desktop
+
+
+
+◉ Absolute And Relative path => absolute path wo hota he jo home directory se sure hota he aur
+  relative path wo hota he jo pwd(present working directory) se suru hota he.
+  jese kisi dusri file ke path me jana he to absolute path => ~$/Document cd /home/mushraf/Document
+  jese kisi dusri file ke path me jana he to relative path => ~$/Document cd javascript-notes
+
+
+
+◉ chmod command(file permissions) in Linux => Control who can access files, search directories, 
+  and run scripts using the Linux’s chmod command.
+  url=> https://www.geeksforgeeks.org/chmod-command-linux/  https://chmodcommand.com/chmod-407/
+
+    ★ show file permissions command => ls -l
+      r:  The read permission.
+      w: The write permission.
+      x: The execute permission.
+
+      Reference   Class     Description
+      u           owner      file's owner
+      g           group      users who are members of
+                            the file's group
+      o           others     users who are neither the
+                            file's owner nor members of 
+                            the file's group
+      a           all       All three of the above, same as ugo
+
+      example -- chmod u=rwx index.js      // yaha u mean user aur equal sign ke sath tino permision di he
+                 chmod u=rwx node_projects     
+                 chmod 777 index.js
+                 chmod 777 node_projects
+
+
+
+◉ Linux VS Unix ==> 
+    Linux => Linux is Open Source, and a large number of programmer work together online and 
+          contribute to its development. provides two GUIs,KDE and Gnome. It is used everywhere
+          from servers, PCs, smartphones, tablets to mainframes. Anybody can use Linux whether
+          a home client, developer or a student. Some Linux Distribution/Versions are Ubuntu, Debian GNU,
+          Arch Linux, etc.
+    Unix => Initially Unix was a command based OS,non-profit organizations. It is used in servers,
+          workstations, and PCs. Developed mainly for servers, workstations, and mainframes. Some Unix
+          versions are SunOS, Solaris, SCO UNIX, AIX, HP/UX, ULTRIX, etc.
+
+
+
+◉ Interface ==> Mainly two interfaces GUIs and CLI.
+
+◉ CLI Other Names for a CLI(Command Line Interpreter) ==>
+      Any command line interpreter program is also often referred to in general as a
+      command line interface. Less commonly, its also called a CLI, command language interpreter,
+      console user interface, command processor, shell, command line shell, or a command interpreter
+
+◾ GUI (Graphical user interface) => It refers to an interface that allows one to 
+      interact with electronic devices like computers and tablets through graphic 
+      elements. It uses icons, menus and other graphical representations to display 
+      information,
+
+
+◾ Shell => The shell is a command line interpreter. The shell is the utility that processes your 
+      requests. When you type in a command at your terminal, the shell interprets the command and
+      calls the program that you want. The shell uses standard syntax for all commands Users communicate 
+      with the kernel through a program known as the shell.
+      A shell is a computer program that presents a command line interface which allows you to control 
+      your computer using commands entered with a keyboard instead of controlling graphical user 
+      interfaces (GUIs) with a mouse/keyboard/touchscreen combination
+
+◾ Kernel ==> The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks 
+      like memory management, task scheduling and file management The computer programs that allocate the system resources
+      and coordinate all the details of the computers internals is called the operating system or the kernel.
+
+
+
+================================================================↭↭↭↭↭↭↭↭↭↭↭↭
+================================================================= 
+mac = LalaLala786
+mail = numberlala
+================================================================= 
+༒༒ мυѕняяαƒ кнαη , ᴍᴜꜱʜʀʀᴀꜰ ᴋʜᴀɴ , Ｍｕｓｈｒｒａｆ Ｋｈａｎ , 𝕸𝖚𝖘𝖍𝖗𝖗𝖆𝖋 𝕶𝖍𝖆𝖓 , 🅼🆄🆂🅷🆁🆁🅰🅵 🅺🅷🅰🅽 , 𝓜𝓾𝓼𝓱𝓻𝓻𝓪𝓯 𝓚𝓱𝓪𝓷 , 𝔐𝔲𝔰𝔥𝔯𝔯𝔞𝔣 𝔎𝔥𝔞𝔫 , 𝕄𝕦𝕤𝕙𝕣𝕣𝕒𝕗 𝕂𝕙𝕒𝕟 , ᴹᵘˢʰʳʳᵃᶠ ᴷʰᵃⁿ , 𝑀𝓊𝓈𝒽𝓇𝓇𝒶𝒻 𝒦𝒽𝒶𝓃 ༒༒
+================================================================◾◾
+
+
+
+
+
+
+
+
+
+
+
+🇲‌🇺‌🇸‌🇭‌🇷‌🇷‌🇦‌🇫‌ 🇰‌🇭‌🇦‌🇳‌
+all file add in stagin area => git add -A
