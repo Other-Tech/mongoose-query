@@ -88,6 +88,7 @@ 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
                    git checkout master
                    git merge mushrraf
 
+    ★ git pull other branch like master => git pull origin master
     ★ show remote repositori => git remote
     ★ local project add on github with clone =>  git pull https://github.com/MushrrafKhan/zombie-project.git
     ★ after commit push code => git push -u origin <branch-name>
